@@ -1,0 +1,117 @@
+/*primeiras propriedades:*/
+*{
+    /*Define a area de margem nos quatros lado do elemento*/
+    margin:0;
+    /*Define entre o conteúdo de um elemento e duas bordas*/
+    padding: 0;
+    /*Para configurar uma ou mais propriedades de contorno*/
+    outline:0;
+}
+body{
+    /*Definição da nossa fonte do body*/
+    font-family: "Roboto", sans-serif;
+    margin:0;
+}
+li {
+    /*retirando as bolinhas das listas*/
+    list-style:none;
+}
+
+.header-menu { /* tornando nosso elemento container, automaticamnete todos os seus filhos direto em flex icon iten*/
+display:flex;
+position:fixed; /*deixa o nosso header fixo*/ 
+width:100%; /*largura*/
+padding:8px; /*espaçamento dos quatros lados */
+padding-bottom: 32px;/*espaçamento intefior*/
+padding-top: 32px; /*espaçamento superior*/
+height:60px;
+background-color: #724796;}
+
+.lista-menu{
+    display:flex;
+    justify-content:space-evenly;/*Espaçamento entre eles*/
+    width:50%;
+    align-items: center;
+}
+    .header-menu nav{
+        display:flex;
+        justify-content: flex-end;
+        width:100%;
+    }
+
+    /*Pegando os items com as tag dentro da lista*/
+    .lista-menu li>a {
+        color:#fff;
+        font-size: 18px;
+        text-decoration: inherit;
+    }
+
+    .principal{
+        height:100vh;
+        display:flex;
+        background-color:#EAEAEA;
+    }
+    /*O container é um componente do Bootstrap que garante que o seu layout vai ficar alinhado corretamente na página.
+    Ele pode definir as margens laterais da página, ou deixar sem margens e, também, posiciona o conteúdo no
+    centro do browser. O container é invisível.*/
+    .container{
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 960px;
+        padding-right: 10px;
+        padding-left: 10px;
+        width: 100%;
+    }
+    .subcontainer-priprincipal{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+    }
+    .topico-principal{
+        font-size: 36px;
+        color:#ff4dbc
+    }
+
+    .lista-item{
+        padding:32px; /*espaçamento dos quatros lados*/
+
+    }
+    .lista ul li{
+        margin-bottom:32px;/*espaçamento entre os intems da nossa lista*/
+    }
+    
+    .lista-titulo{
+        margin-bottom: 5px;
+        font-size: 22px;
+        color:#661e4b;
+        font-weight: 700;
+    }
+    .subtitulo-lista{
+        font: size 18px;
+        color: #828282;
+        font-weight: 500;
+    }
+    .footer{
+        background-color: #724796;
+        height:30vh;
+        display: flex;
+        align-items: center;
+    }
+   
+    .lista-footer{
+        color:#fff;
+        font-weight: 18px;
+        margin-bottom: 16px;
+        display: flex;
+        align-items: center;
+    }
+    
+
+
+
+
+
+    
